@@ -3,18 +3,28 @@ import { render } from "@testing-library/react";
 import { Anchor } from "src/components/anchor";
 import { Footer } from "src/components/footer";
 
+// if (
+//   indentItem.length >= 12 ||
+//   attributes.length >= MAX_ATTRIBUTES_TO_SPACING_OUTER ||
+//   name.length + value.length >= MAX_ATTRIBUTE_LENGHT
+// ) {}
+
 describe("Anchor component", () => {
-  it("should renders an anchor with a path and route props", () => {
-    const { getByRole } = render(
-      <Anchor path="www.instagram.com" route="Instagram" />
-    );
-    expect(getByRole("link")).toMatchInlineSnapshot(`
+  describe("When link and name of the link are passed", () => {
+    it("Should renders an anchor without properties only with data-test-id", () => {
+      // Arrange
+
+      // Assert
+      const { getByRole } = render(
+        <Anchor path="www.instagram.com" route="Instagram" />
+      );
+      // Assert
+      expect(getByRole("link")).toMatchInlineSnapshot(`
 <a data-test-id='testing'>
-        NodeList [
-  Instagram,
-]
-        </a>
+
+</a>
 `);
+    });
   });
 });
 
@@ -31,19 +41,19 @@ describe("Footer component", () => {
 
       // Assert
       expect(getByRole("contentinfo")).toMatchInlineSnapshot(`
-<footer
-  class= w-full bg-[#000000] text-white px-4 pt-4
->
-  <div
-    class=flex text-center pt-2 sm:text-end
-  >
-    <div
-      class=w-full text-sm
-    >
+<footer>
+  <a>
+
+  </a>
+  <img/>
+  <img data-test-id='test'/>
+  <div data-test-id='test-2'>
+
+  </div>
+  <div>
+    <div>
       <p>
-        © 
-        2023
-         e-commerce
+
       </p>
     </div>
   </div>

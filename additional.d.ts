@@ -18,24 +18,6 @@ export interface LinkProps {
   style?: string
 }
 
-export interface NavLinks {
-  normal?: {
-    special?: boolean
-    route: string
-    path: string
-  }
-  dropdown?: {
-    route: Route
-    path: string[]
-  }
-  account?: boolean
-  special?: {
-    route: string
-    path: string
-    src: string
-  }
-}
-
 export interface Route {
   label: string
   options: string[]

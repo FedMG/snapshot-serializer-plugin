@@ -39,7 +39,10 @@ export const Footer = ({ links }: FooterProps): ReactElement => {
         <div data-test-id='footer-links' className='w-full grid grid-cols-2 gap-8 sm:flex sm:flex-row sm:justify-evenly sm:gap-2'>
           {links.map(createColumns)}
         </div>}
-
+        <a href='' />
+        <img src='1' />
+        <img src='2' data-test-id='test' />
+      <div data-test-id='test-2' className='new-div'></div>
       <div className='flex text-center pt-2 sm:text-end'>
         <div className='w-full text-sm'>
           <p>&copy; {getYear()} e-commerce</p>

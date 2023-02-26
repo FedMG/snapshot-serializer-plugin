@@ -12,12 +12,10 @@
     "test-a": "jest --watchAll",
     "test:ci": "jest --ci"
   },
-  "dependencies": {
+  "devDependencies": {
     "next": "13.2.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
+    "react-dom": "18.2.0",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
     "@jest/globals": "^29.3.1",
