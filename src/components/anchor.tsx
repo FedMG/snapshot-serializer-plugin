@@ -7,7 +7,7 @@ export const Anchor: React.FC<LinkProps> = ({ path, route, style }): ReactElemen
     className={`text-white hover:text-gray-400 hover:underline ${style ?? ''}`}
     target='_blank'
     rel='noreferrer'
-    data-test-id='testing'
+    data-testid='testing'
   >
     {route}
   </a>

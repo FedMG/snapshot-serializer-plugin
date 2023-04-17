@@ -1,7 +1,7 @@
 import type { Config, Printer } from 'pretty-format' 
 
 const SELF_CLOSING_TAGS = ["br", "img", "input", "meta", "link", "hr"]
-const VALID_ATTRIBUTES = ["data-test-id"]
+const VALID_ATTRIBUTES = ["data-testid"]
 
 function renderIndentedElement(node: HTMLElement, config: Config, nextIndent: string, depth: number, refs: HTMLElement[], printer: Printer) {
   const prevIndent = nextIndent + config.indent

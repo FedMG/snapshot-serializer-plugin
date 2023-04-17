@@ -44,41 +44,20 @@ const createColumns = ({
 };
 
 export const Footer = ({ links }: FooterProps): ReactElement => {
-  if (links) {
     return (
       <footer className=" w-full bg-[#000000] text-white px-4 pt-4">
+        {links &&
         <div
-          data-test-id="footer-links"
+          data-testid="footer-links"
           className="w-full grid grid-cols-2 gap-8 sm:flex sm:flex-row sm:justify-evenly sm:gap-2"
         >
           {links.map(createColumns)}
-        </div>
+        </div>}
 
         <div className="w-full text-sm">
           <p>&copy {getYear()} e-commerce</p>
           Bye
         </div>
       </footer>
-    );
-  }
-
-  return (
-    <footer className="w-full bg-[#000000] text-white px-4 pt-4">
-      <div data-test-id="test-2" className="new-div"></div>
-      <a href="" className="mt-8" />
-      This
-      <hr data-test-id="test" className="m-2" />
-      <div className="flex text-center pt-2 sm:text-end">
-        top
-        <div>
-          <p>first paragraph</p>
-        </div>
-        middle
-      </div>
-      <div className="w-full text-sm">
-        <p>&copy {getYear()} e-commerce</p>
-        Bye
-      </div>
-    </footer>
-  );
+  )
 };

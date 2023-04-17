@@ -6,7 +6,7 @@ import { Footer } from "src/components/footer"
 
 describe("Anchor component", () => {
   describe("When link and name of the link are passed", () => {
-    it("Should renders an anchor without properties only with data-test-id", () => {
+    it("Should renders an anchor without properties only with data-testid", () => {
       // Arrange
 
       // Assert
@@ -15,7 +15,7 @@ describe("Anchor component", () => {
       )
       // Assert
       expect(getByRole("link")).toMatchInlineSnapshot(`
-<a data-test-id='testing'>
+<a data-testid='testing'>
   Instagram
 </a>
 `)
@@ -37,23 +37,6 @@ describe("Footer component", () => {
       // Assert
       expect(getByRole("contentinfo")).toMatchInlineSnapshot(`
 <footer>
-  <div data-test-id='test-2'>
-
-  </div>
-  <a>
-
-  </a>
-  This
-  <hr data-test-id='test'/>
-  <div>
-    top
-    <div>
-      <p>
-        first paragraph
-      </p>
-    </div>
-    middle
-  </div>
   <div>
     <p>
       &copy 
