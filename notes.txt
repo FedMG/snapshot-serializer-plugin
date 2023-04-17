@@ -1,0 +1,21 @@
+// text_node: number
+// textContent: string
+// nodeName: string
+// nodeType: number
+// tagName: string
+// childNodes: [object NodeList]
+// nodeValue: object | null
+// parentElement: [object HTMLElement]
+// parentNode: [object HTMLElement]
+  
+// console.log(`
+// text_node: ${node.TEXT_NODE}
+// textContent: ${node.textContent}
+// nodeName: ${node.nodeName}
+// nodeType: ${node.nodeType}
+// tagName: ${node.tagName}
+// childNodes: ${node.childNodes}
+// childNodes.nodeValue: ${node.childNodes[0].nodeValue}
+// childNodes.nodeName: ${node.childNodes[0].nodeName}
+// nodeValue: ${node.nodeValue}
+//`)
