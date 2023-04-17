@@ -6,7 +6,7 @@
       "@/components/*": ["src/components/*"],
       "@/pages/*": ["src/pages/*"],
       "@/utils/*": ["src/utils/*"],
-      "@/styles/*": ["styles/*"],
+      "@/styles/*": ["src/styles/*"],
       "@/additional/*": ["additional.d.ts"],
       "@/_app-types/*": ["_app-types.d.ts"]
     },
