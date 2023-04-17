@@ -1,6 +1,6 @@
 # Serializer Plugin for Snapshot Tests
 
-This is a useful serializer plugin for [__Jest snapshot testing__][1] to give more readable snapshot outputs and improve your tests based on<br> the [__Testing Best Practices__][2], and which uses the [__Pretty Format__][2] library.
+This is a useful serializer plugin for [__Jest snapshot testing__][1] to give more readable snapshot outputs and improve your tests based on the [__Testing Best Practices__][2], and which uses the [__Pretty Format__][2] library.
 
 
 
